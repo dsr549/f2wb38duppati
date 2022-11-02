@@ -1,0 +1,31 @@
+extends layout
+
+block content
+
+    div(class="container-fluid")
+
+        h1= title
+
+    let results=[{Horse_color:"brown",Horse_breed:"Arabian horse",Horse_price:5,000 },{Horse_color:"Black",Horse_breed:"Friesian horse",Horse_price:3,000},{Horse_color:"Dark red",Horse_breed:"American quarter horse",Horse_price:9,000}]
+
+        div(class="row")
+
+            each form,index in results
+
+                div(class = "col-sm-2 bg-primary" onclick=`buy(${index})`) #{form.Horse_color}              
+
+                div(class = "col-sm-2 bg-primary" onclick=`buy(${index})`) #{form.Horse_breed}                
+
+                div(class = "col-sm-2 bg-primary" onclick=`buy(${index})`) #{form.Horse_price}
+
+                hr
+
+    script.
+
+        function buy(itemNo)
+
+        {
+
+            alert(`You purchased Item ${itemNo+1}`)
+
+        }
