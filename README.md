@@ -2,8 +2,8 @@
 
 This is sudheer duppati
 Hosted at<https://f2wb38duppati.onrender.com>
-my class=Horse
+my class=horse
 my attributes are
-Horse_breed:(String)
-Horse_color:(String)
-Horse_price:(Number)
+horse_breed:(String)
+horse_color:(String)
+horse_price:(Number)
